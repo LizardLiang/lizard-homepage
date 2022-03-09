@@ -71,9 +71,13 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem>
+          <Link
+            href="https://github.com/LizardLiang?tab=repositories"
+            target="_blank"
+          >
+            <Icon as={GoMarkGithub} style={{ marginRight: '10px' }} />
+            View Source
+          </Link>
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
@@ -110,3 +114,4 @@ const Navbar = props => {
 }
 
 export default Navbar
+
